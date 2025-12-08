@@ -54,11 +54,16 @@
   <h2>Robot Vacuum Buying Guides & Articles</h2>
 
   <div class="article">
-    <h3>1. Best Robot Vacuums of 2026 – Full Comparison</h3>
-    <p>The robot vacuum market in 2026 continues to advance rapidly with next-generation AI, improved mapping, and highly automated cleaning docks. Top models include the ECOVACS X2 Omni, Roborock S8 Pro Ultra, and Dreame L20 Ultra.</p>
-    <a href="Articles/Deals.html" class="view-deals-button">View Deals</a>
+  <h2>Best Robot Vacuums of 2026 – Full Comparison</h2>
+  <p>The robot vacuum market in 2026 continues to advance rapidly with next-generation AI, improved mapping, and highly automated cleaning docks. Top models include the ECOVACS X2 Omni, Roborock S8 Pro Ultra, and Dreame L20 Ultra.</p>
 
-    <style>
+  <label class="view-deals-label">
+    <input type="radio" name="vacuum-deal" value="ecovacs">
+    <a href="Articles/Deals.html" class="view-deals-button">View Deals</a>
+  </label>
+</div>
+
+<style>
 .view-deals-button {
   display: inline-block;
   padding: 10px 20px;
@@ -67,11 +72,23 @@
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
+  margin-left: 8px; /* spacing between radio and button */
 }
+
 .view-deals-button:hover {
   background-color: #005fcc;
 }
+
+.view-deals-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.view-deals-label input[type="radio"] {
+  transform: scale(1.2);
+}
 </style>
+
 
 
   </div>
