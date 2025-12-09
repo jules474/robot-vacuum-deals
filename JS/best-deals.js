@@ -1,15 +1,36 @@
-// Auto-generate Google Shopping links for each model
+document.addEventListener('DOMContentLoaded', () => {
 
-const models = [
-  'ECOVACS X2 Omni',
-  'Roborock S8 Pro Ultra',
-  'Dreame L20 Ultra'
-];
+  const products = [
+    {
+      name: 'ECOVACS X2 Omni',
+      id: 'ecovacs-x2-omni',
+      affiliate: 'YOUR_AFFILIATE_LINK_1'
+    },
+    {
+      name: 'Roborock S8 Pro Ultra',
+      id: 'roborock-s8-pro-ultra',
+      affiliate: 'YOUR_AFFILIATE_LINK_2'
+    },
+    {
+      name: 'Dreame L20 Ultra',
+      id: 'dreame-l20-ultra',
+      affiliate: 'YOUR_AFFILIATE_LINK_3'
+    }
+  ];
 
-models.forEach(model => {
-  const link = document.getElementById(`${model.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g,'')}-link`);
-  if (link) {
-    const search = encodeURIComponent(`${model} best price Australia`);
-    link.href = `https://www.google.com/search?tbm=shop&q=${search}`;
-  }
+  products.forEach(p => {
+    // Google Shopping link
+    const compare = document.getElementById(`${p.id}-compare`);
+    if (compare) {
+      const query = encodeURIComponent(`${p.name} best price Australia`);
+      compare.href = `https://www.google.com/search?tbm=shop&q=${query}`;
+    }
+
+    // Affiliate link
+    const buy = document.getElementById(`${p.id}-affiliate`);
+    if (buy) {
+      buy.href = p.affiliate;
+    }
+  });
+
 });
