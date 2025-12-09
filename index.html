@@ -18,6 +18,30 @@
     .btn { background:#007bff; color:#fff; padding:10px 16px; border-radius:6px; display:inline-block; margin-top:10px; text-decoration:none; }
 
     footer { background:#111; color:#fff; text-align:center; padding:20px; margin-top:50px; }
+
+    /* Radio button & button style */
+    .view-deals-label {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .view-deals-label input[type="radio"] {
+      transform: scale(1.2);
+      margin-right: 8px;
+    }
+    .view-deals-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0077ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .view-deals-button:hover {
+      background-color: #005fcc;
+    }
   </style>
 </head>
 <body>
@@ -54,98 +78,69 @@
   <h2>Robot Vacuum Buying Guides & Articles</h2>
 
   <div class="article">
-  <h2>Best Robot Vacuums of 2026 – Full Comparison</h2>
-  <p>The robot vacuum market in 2026 continues to advance rapidly with next-generation AI, improved mapping, and highly automated cleaning docks. Top models include the ECOVACS X2 Omni, Roborock S8 Pro Ultra, and Dreame L20 Ultra.</p>
+    <h3>Best Robot Vacuums of 2026 – Full Comparison</h3>
+    <p>The robot vacuum market in 2026 continues to advance rapidly with next-generation AI, improved mapping, and highly automated cleaning docks. Top models include the ECOVACS X2 Omni, Roborock S8 Pro Ultra, and Dreame L20 Ultra.</p>
 
-  <label class="view-deals-label">
-    <input type="radio" name="vacuum-deal" value="ecovacs">
-    <a href="Articles/Deals.html" class="view-deals-button">View Deals</a>
-  </label>
-</div>
-
-<style>
-.view-deals-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0077ff;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  margin-left: 8px; /* spacing between radio and button */
-}
-
-.view-deals-button:hover {
-  background-color: #005fcc;
-}
-
-.view-deals-label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.view-deals-label input[type="radio"] {
-  transform: scale(1.2);
-}
-</style>
-
-
-
+    <label class="view-deals-label">
+      <input type="radio" name="vacuum-deal" onclick="window.location.href='Articles/Deals.html'">
+      <span class="view-deals-button">View Deals</span>
+    </label>
   </div>
 
   <div class="article">
-    <h3>2. ECOVACS X2 Omni Review – Is It Worth It?</h3>
+    <h3>ECOVACS X2 Omni Review – Is It Worth It?</h3>
     <p>The ECOVACS X2 Omni features cutting-edge navigation, 8000+ Pa suction, and a fully automated cleaning station, making it one of the best all-round models for 2026.</p>
-    <a class="btn" href="#">Check ECOVACS Deals</a>
+    <a class="btn" href="Articles/x2-omni.html">Check ECOVACS Deals</a>
   </div>
 
   <div class="article">
-    <h3>3. Roborock S8 Pro Ultra – The Ultimate All-in-One?</h3>
+    <h3>Roborock S8 Pro Ultra – The Ultimate All-in-One?</h3>
     <p>The Roborock S8 Pro Ultra leads in precision mapping, dual roller brushes, and powerful sonic mopping technology.</p>
-    <a class="btn" href="#">Check Roborock Pricing</a>
+    <a class="btn" href="Articles/s8-pro-ultra.html">Check Roborock Pricing</a>
   </div>
 
   <div class="article">
-    <h3>4. Dreame L20 Ultra – Best Obstacle Avoidance?</h3>
+    <h3>Dreame L20 Ultra – Best Obstacle Avoidance?</h3>
     <p>Dreame’s advanced AI makes the L20 Ultra one of the best robots for homes with pets, toys, and clutter.</p>
-    <a class="btn" href="#">Shop Dreame</a>
+    <a class="btn" href="Articles/dreame-l20-ultra.html">Shop Dreame</a>
   </div>
 
   <div class="article">
-    <h3>5. Best Budget Robot Vacuums Under $600</h3>
+    <h3>Best Budget Robot Vacuums Under $600</h3>
     <p>Affordable models from eufy and Xiaomi provide strong suction and smart mapping at lower prices.</p>
-    <a class="btn" href="#">Budget Picks</a>
+    <a class="btn" href="Articles/budget-picks.html">Budget Picks</a>
   </div>
 
   <div class="article">
-    <h3>6. Best Robot Vacuums for Pet Hair</h3>
+    <h3>Best Robot Vacuums for Pet Hair</h3>
     <p>Homes with pets benefit from strong suction, rubber rollers, and hair-resistant designs. Top picks include the Q Revo MaxV and T20 Omni.</p>
-    <a class="btn" href="#">Pet-Friendly Robots</a>
+    <a class="btn" href="Articles/pet-friendly.html">Pet-Friendly Robots</a>
   </div>
 
   <div class="article">
-    <h3>7. Robot Vacuums vs Stick Vacuums</h3>
+    <h3>Robot Vacuums vs Stick Vacuums</h3>
     <p>Robot vacuums maintain day-to-day cleanliness while stick vacuums handle deeper cleaning. Many homes benefit from owning both.</p>
-    <a class="btn" href="#">Compare Options</a>
+    <a class="btn" href="Articles/compare.html">Compare Options</a>
   </div>
 
   <div class="article">
-    <h3>8. How to Choose the Right Robot Vacuum</h3>
+    <h3>How to Choose the Right Robot Vacuum</h3>
     <p>Your ideal robot depends on floor type, layout, pets, and personal preferences. This guide explains how to choose.</p>
-    <a class="btn" href="#">Start Buying Guide</a>
+    <a class="btn" href="Articles/start-buying-guide.html">Start Buying Guide</a>
   </div>
 
   <div class="article">
-    <h3>9. Best Robot Vacuums With Auto-Empty Docks</h3>
+    <h3>Best Robot Vacuums With Auto-Empty Docks</h3>
     <p>Auto-empty docks hold up to 60 days of dust and make cleaning fully hands-free.</p>
-    <a class="btn" href="#">Auto-Empty Picks</a>
+    <a class="btn" href="Articles/auto-empty.html">Auto-Empty Picks</a>
   </div>
 
   <div class="article">
-    <h3>10. Best Mopping Robots 2026</h3>
+    <h3>Best Mopping Robots 2026</h3>
     <p>New mopping systems with sonic vibration and heated pads make 2026 models incredibly efficient.</p>
-    <a class="btn" href="#">Best Mopping Robots</a>
+    <a class="btn" href="Articles/best-mopping.html">Best Mopping Robots</a>
   </div>
+
 </section>
 
 <section id="deals" class="section">
